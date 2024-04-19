@@ -15,6 +15,7 @@ jobs:
       release_type: "alpine"
       release_url: "v3.19/main"
       release_name: "monit"
-      target-arch: "64"
+      target-arch: >-
+        ["amd64", "aarch64"]
     secrets:
       OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
